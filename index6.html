@@ -1,6 +1,6 @@
 <html>
 	<head>
-		<title>Semi-Restore for iOS 5.0-7.0.6</title>
+		<title>Semi-Restore for iOS 5.0-6.1.5</title>
 		<style type="text/css">
 			h1{
 				text-align:center;
@@ -24,7 +24,7 @@
 			}
 			li {
 				list-style: none;
-				list-style-image: url('arrow_icon-flat.png');
+				list-style-image: url('arrow_icon.png');
 				margin-top: 14px;
 				font-size: 14px;
 				line-height: 20px;
@@ -35,16 +35,15 @@
 			body {
 				color:rgb(240, 240, 240);
 				font-family: gotham-rounded-light,helvetica,sans-serif;
-				background: #2f58ed; /* Old browsers */
-				/* IE9 SVG, needs conditional override of 'filter' to 'none' */
-				background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIxMDAlIiB5Mj0iMTAwJSI+CiAgICA8c3RvcCBvZmZzZXQ9IjAlIiBzdG9wLWNvbG9yPSIjMmY1OGVkIiBzdG9wLW9wYWNpdHk9IjEiLz4KICAgIDxzdG9wIG9mZnNldD0iMjUlIiBzdG9wLWNvbG9yPSIjMjU5OWM0IiBzdG9wLW9wYWNpdHk9IjEiLz4KICAgIDxzdG9wIG9mZnNldD0iNTAlIiBzdG9wLWNvbG9yPSIjN2Q5MmU4IiBzdG9wLW9wYWNpdHk9IjEiLz4KICAgIDxzdG9wIG9mZnNldD0iNzUlIiBzdG9wLWNvbG9yPSIjMjM5OWM0IiBzdG9wLW9wYWNpdHk9IjEiLz4KICAgIDxzdG9wIG9mZnNldD0iMTAwJSIgc3RvcC1jb2xvcj0iIzJmNThlZCIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgPC9saW5lYXJHcmFkaWVudD4KICA8cmVjdCB4PSIwIiB5PSIwIiB3aWR0aD0iMSIgaGVpZ2h0PSIxIiBmaWxsPSJ1cmwoI2dyYWQtdWNnZy1nZW5lcmF0ZWQpIiAvPgo8L3N2Zz4=);
-				background: -moz-linear-gradient(-45deg, #2f58ed 0%, #2599c4 25%, #7d92e8 50%, #2399c4 75%, #2f58ed 100%); /* FF3.6+ */
-				background: -webkit-gradient(linear, left top, right bottom, color-stop(0%,#2f58ed), color-stop(25%,#2599c4), color-stop(50%,#7d92e8), color-stop(75%,#2399c4), color-stop(100%,#2f58ed)); /* Chrome,Safari4+ */
-				background: -webkit-linear-gradient(-45deg, #2f58ed 0%,#2599c4 25%,#7d92e8 50%,#2399c4 75%,#2f58ed 100%); /* Chrome10+,Safari5.1+ */
-				background: -o-linear-gradient(-45deg, #2f58ed 0%,#2599c4 25%,#7d92e8 50%,#2399c4 75%,#2f58ed 100%); /* Opera 11.10+ */
-				background: -ms-linear-gradient(-45deg, #2f58ed 0%,#2599c4 25%,#7d92e8 50%,#2399c4 75%,#2f58ed 100%); /* IE10+ */
-				background: linear-gradient(135deg, #2f58ed 0%,#2599c4 25%,#7d92e8 50%,#2399c4 75%,#2f58ed 100%); /* W3C */
-				filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#2f58ed', endColorstr='#2f58ed',GradientType=1 ); /* IE6-8 fallback on horizontal gradient */
+								background: #333333; /* Old browsers */
+				background: -moz-linear-gradient(top, #333333 0%, #777777 100%); /* FF3.6+ */
+				background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#333333), color-stop(100%,#777777)); /* Chrome,Safari4+ */
+				background: -webkit-linear-gradient(top, #333333 0%,#777777 100%); /* Chrome10+,Safari5.1+ */
+				background: -o-linear-gradient(top, #333333 0%,#777777 100%); /* Opera 11.10+ */
+				background: -ms-linear-gradient(top, #333333 0%,#777777 100%); /* IE10+ */
+				background: linear-gradient(to bottom, #333333 0%,#777777 100%); /* W3C */
+				filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#333333', endColorstr='#777777',GradientType=0 ); /* IE6-9 */
+				background-attachment: fixed;
 			}
 			a {
 				color: white;
@@ -77,9 +76,6 @@
 				background: #999999;
 			}
 			.button-bgactive {
-				background: #7db9e8;
-			}
-			.button-bgios6 {
 				background: #7db9e8; /* Old browsers */
 				background: -moz-linear-gradient(top, #7db9e8 0%, #1e5799 100%); /* FF3.6+ */
 				background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#7db9e8), color-stop(100%,#1e5799)); /* Chrome,Safari4+ */
@@ -100,6 +96,19 @@ background: linear-gradient(to bottom, #d1d1d1 0%,#a8a8a8 100%); /* W3C */
 filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d1d1d1', endColorstr='#a8a8a8',GradientType=0 ); /* IE6-9 */
 			}
 		</style>
+		<script type="text/javascript">
+			/*function checkAnswer(){
+				if (document.getElementById("lastresort").checked){
+					document.getElementById("mask").display = "none";
+				} else {
+					alert("Incorrect Answer. Try again.");
+				}
+			}*/
+
+
+			//alert("Warning: do not try using SemiRestore if you installed the package afc2add from Cydia. Please wait for an update by CoolStar first.");
+			//alert("I will repeat this again. Warning: do not try using SemiRestore if you installed the package afc2add from Cydia. Please wait for an update by CoolStar first.");
+		</script>
 		<script>
   			(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
 			(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
@@ -111,11 +120,26 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d1d1d1', end
 		</script>
 	</head>
 	<body>
+		<!--<div id="mask" style="position:fixed;left:0px;top:0px;width:100%;height:100%;background: rgba(0,0,0,0.25);z-index:9000;">
+			<div style="background: white;width: 640px;height: 300px;margin: auto;color:black;text-align: center;border-bottom-right-radius: 10px;border-bottom-left-radius: 10px;">
+				<h3>Warning: SemiRestore is only for a last resort to save your jailbreak or delete your data.</h3>
+				To continue, please pick out the right answer:<br /><br />
+				What is the purpose of SemiRestore?<br /><br />
+				<div align="left">
+					<input type="radio" name="answer" id="fixsafemode" value="fixsafemode">Fix Safe Mode</input><br />
+					<input type="radio" name="answer" id="reinstallcydia" value="reinstallcydia">Reinstall Cydia</input><br />
+					<input type="radio" name="answer" id="lastresort" value="lastresort">Last resort to save the jailbreak or wipe the device of all data.</input><br />
+					<input type="radio" name="answer" id="joke" value="joke">Play a joke on a friend by erasing their data</input><br /><br />
+					<button onclick="checkAnswer();">Enter</button>
+				</div>
+			</div>
+		</div>
+		<br />-->
 		<div align="center" style="width: 720px;margin: 0 auto;">
-			<img src="logo-flat.png" style="float: left;height: 150px;" />
+			<img src="logo-new.png" style="float: left;height: 150px;" />
 			<div><h1>Semi-Restore</h1>
-			<h2 style="float:right;">For iOS 5.0-7.0.6</h2></div>
-			<img src="http://i.imgur.com/utAa628.png" style="margin: 0 auto;width: 740px;" />
+			<h2 style="float:right;">For iOS 5.0-6.1.5</h2></div>
+			<img src="http://i.imgur.com/W5cXL3V.png" style="margin: 0 auto;width: 740px;" />
 			<br /><br />
 		</div>
 		<div align="center">
@@ -131,21 +155,19 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d1d1d1', end
 		</div>
 		<br />
 		<div align="center">
-			<div style="width: 600px;height:15px;background-color: #999999;text-align: left;"><div style="width: 480px;height: 15px;background: #7db9e8;"></div></div><br />
-			80%: Windows version released! Linux version is almost working.<br />Getting access to a Mac seems to be taking forever. Writing it in Java now.<br /><br />
-		</div>
-		<div align="center">
-			<a href="https://mega.co.nz/#!qApHBYgJ!ugF2UIx7zVZZvkC5fEwPtzv3tOCrfSoAwI3InzbQ0Sg"><div class="button button-bgactive">
+			<a href="https://mega.co.nz/#!yEoUQRyD!etGL72jCytAnppq-t5UQ4h2xBLxFq9ZSGFaqirV-PqQ"><div class="button button-bgactive">
 				<div class="button-text">Windows</div>
 			</div></a>
-			<div class="button button-bg">
-				<div class="button-backbg button-bgactive" style="width: 20px;"></div>
+			<!--<a onclick="alert('Warning: The OS X version of SemiRestore is old and unsupported. Please use the Windows or SSH versions instead.');" href="http://bit.ly/11WSjIv"><div class="button button-bgstale">
 				<div class="button-text">OS X</div>
-			</div>
+			</div></a>-->
 			<div class="button button-bg">
-				<div class="button-backbg button-bgactive" style="width: 40px;"></div>
+				<div class="button-backbg button-bgactive" style="width: 10px;"></div>
 				<div class="button-text">Linux</div>
 			</div>
+			<a href="https://mega.co.nz/#!iZAmUBpL!SiFu1wQIg1mcwtNdWJ8Q_mmR0Ow9dcb662bSGWyAS6g"><div class="button button-bgactive">
+				<div class="button-text">SSH</div>
+			</div></a>
 			<br /><br />
 			<form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
 				<input type="hidden" name="cmd" value="_s-xclick">
@@ -154,17 +176,30 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d1d1d1', end
 				<input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donate_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
 				<img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
 			</form>
-			<span style="font-size: 14px;">Compatible with all jailbroken iPhone, iPod touch, iPad and iPad mini models running iOS 5.0 through 7.0.6.</span><br />
-			<a href="https://twitter.com/coolstarorg"><img src="twitter_icon-flat.png" /></a>
+			<span style="font-size: 14px;">Compatible with all jailbroken iPhone, iPod touch, iPad and iPad mini models running iOS 5.0 through 6.1.5.</span><br />
+			<a href="https://twitter.com/coolstarorg"><img src="twitter_icon.png" /></a>
 			<br />
 			<hr>
+		</div>
+		<div align="center">
+			<h3>Official Mirrors</h3><br />
+			<a href="http://mega.co.nz/" class="dlprovider">Mega</a>: &nbsp;&nbsp; <a href="https://mega.co.nz/#!yEoUQRyD!etGL72jCytAnppq-t5UQ4h2xBLxFq9ZSGFaqirV-PqQ">Windows</a> <!--&nbsp;&nbsp; <a onclick="alert('Warning: The OS X version of SemiRestore is old and unsupported. Please use the Windows or SSH versions instead.');" href="http://bit.ly/11WSjIv">OS X</a>--> &nbsp;&nbsp; <a href="https://mega.co.nz/#!iZAmUBpL!SiFu1wQIg1mcwtNdWJ8Q_mmR0Ow9dcb662bSGWyAS6g">SSH</a>
+			<br /><br />
+			<a href="http://box.com/" class="dlprovider">Box</a>: &nbsp;&nbsp; <a href="https://app.box.com/s/faa25ugoyfes5v0cj5fl">Windows</a> &nbsp;&nbsp; <!--<a onclick="alert('Warning: The OS X version of SemiRestore is old and unsupported. Please use the Windows or SSH versions instead.');" href="http://bit.ly/1aIOIpc">OS X</a>--> &nbsp;&nbsp; <a href="https://app.box.com/s/ex8rxp24gf0h01t8htsf">SSH</a>
+			<hr>
+		</div>
+		<div align="center">
+			<h3>Video</h3>
+			<iframe width="560" height="315" src="http://www.youtube.com/embed/4YKohT-Ifb4" frameborder="0" allowfullscreen></iframe><br /><br />
+			Video courtesy of <a style="color:white;" href="https://www.youtube.com/user/macmixing">macmixing</a>.<br />
+			<hr>
+			<br />
 		</div>
 		<div align="center">
 			<h3>Requirements</h3>
 			<ul style="margin: 0 auto;text-align: left;width:512px;">
 				<li>5-10 minutes of your time!</li>
-				<li>OpenSSH installed on your device</li>
-				<li>A computer running Windows or Linux</li>
+				<li>A computer running Windows</li>
 			</ul>
 			<br />
 			<hr>
@@ -173,7 +208,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d1d1d1', end
 			<h3>Important! Read this or you may regret it!</h3>
 			<ul style="margin: 0 auto;text-align: left;width:512px;">
 				<li>SemiRestore supports Windows XP SP3 or higher.</li>
-				<li>Windows users must have iTunes, and .NET 3.5 or higher installed.</li>
+				<li>Windows users must have iTunes, Microsoft Visual C++ 2010 Redistributable, and .NET 4.0 or higher installed.</li>
 				<li>There may be a better way to fix your current problem. For example, to fix "Safe Mode" issues, you can just uninstall Mobile Substrate from Cydia.</li>
 				<li>Like any other restore, make sure you backup your data if you want it later.</li>
 				<li>Avoid using your iOS device or anything related to iTunes or XCode during the Semi-Restore. Why not actually go outside?</li>
@@ -209,8 +244,8 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d1d1d1', end
 			<ul style="margin: 0 auto;text-align: left;width:512px;">
 				<li><a href="https://twitter.com/coolstarorg">@coolstarorg</a> for his research and development.</li>
 				<li><a href="https://twitter.com/pod2g">@pod2g</a> for the iOS 5.x jailbreaks.</li>
-				<li><a href="https://twitter.com/evad3rs">@evad3rs</a> for the iOS 6.0-6.1.2, and 7.x jailbreak.</li>
-				<li><a href="https://twitter.com/winocm">@winocm</a>,<a href="https://twitter.com/iH8Sn0w">@iH8Sn0w</a>, and <a href="https://twitter.com/SquiffyPwn">@SquiffyPwn</a> for the iOS 6.1.3-6.1.5 jailbreak.</li>
+				<li><a href="https://twitter.com/evad3rs">@evad3rs</a> for the iOS 6.0-6.1.2 jailbreak.</li>
+				<li><a href="https://twitter.com/iH8Sn0w">@iH8Sn0w</a>, <a href="https://twitter.com/winocm">@winocm</a>, and <a href="https://twitter.com/SquiffyPwn">@SquiffyPwn</a> for the iOS 6.1.3-6.1.5 jailbreak.</li>
 				<li><a href="https://webchat.freenode.net/?channels=jailbreakqa">#jailbreakqa on freenode</a> for the inspiration to create the semi-restore.</li>
 			</ul>
 			<br />
