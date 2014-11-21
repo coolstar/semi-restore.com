@@ -1,3 +1,234 @@
-<script type="text/javascript">
-window.location="https://semi-restore.com/";
-</script>
+<html>
+	<head>
+		<title>Semi-Restore for iOS 5.0-7.1.2</title>
+		<style type="text/css">
+			h1{
+				text-align:center;
+				font-weight:normal;
+				font-size: 60px;
+				line-height: 60px;
+				margin: 10px;
+				margin-bottom: 0px;
+			}
+			h2{
+				text-align:center;
+				font-weight:normal;
+				font-size: 30px;
+				margin-top: 0px;
+			}
+			h3{
+				text-align:center;
+				font-weight:normal;
+				font-size: 30px;
+				margin: 5px;
+			}
+			li {
+				list-style: none;
+				list-style-image: url('arrow_icon-flat.png');
+				margin-top: 14px;
+				font-size: 14px;
+				line-height: 20px;
+			}
+			li a {
+				color: white;
+			}
+			body {
+				color:rgb(240, 240, 240);
+				font-family: gotham-rounded-light,helvetica,sans-serif;
+				background: #2f58ed; /* Old browsers */
+				/* IE9 SVG, needs conditional override of 'filter' to 'none' */
+				background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIxMDAlIiB5Mj0iMTAwJSI+CiAgICA8c3RvcCBvZmZzZXQ9IjAlIiBzdG9wLWNvbG9yPSIjMmY1OGVkIiBzdG9wLW9wYWNpdHk9IjEiLz4KICAgIDxzdG9wIG9mZnNldD0iMjUlIiBzdG9wLWNvbG9yPSIjMjU5OWM0IiBzdG9wLW9wYWNpdHk9IjEiLz4KICAgIDxzdG9wIG9mZnNldD0iNTAlIiBzdG9wLWNvbG9yPSIjN2Q5MmU4IiBzdG9wLW9wYWNpdHk9IjEiLz4KICAgIDxzdG9wIG9mZnNldD0iNzUlIiBzdG9wLWNvbG9yPSIjMjM5OWM0IiBzdG9wLW9wYWNpdHk9IjEiLz4KICAgIDxzdG9wIG9mZnNldD0iMTAwJSIgc3RvcC1jb2xvcj0iIzJmNThlZCIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgPC9saW5lYXJHcmFkaWVudD4KICA8cmVjdCB4PSIwIiB5PSIwIiB3aWR0aD0iMSIgaGVpZ2h0PSIxIiBmaWxsPSJ1cmwoI2dyYWQtdWNnZy1nZW5lcmF0ZWQpIiAvPgo8L3N2Zz4=);
+				background: -moz-linear-gradient(-45deg, #2f58ed 0%, #2599c4 25%, #7d92e8 50%, #2399c4 75%, #2f58ed 100%); /* FF3.6+ */
+				background: -webkit-gradient(linear, left top, right bottom, color-stop(0%,#2f58ed), color-stop(25%,#2599c4), color-stop(50%,#7d92e8), color-stop(75%,#2399c4), color-stop(100%,#2f58ed)); /* Chrome,Safari4+ */
+				background: -webkit-linear-gradient(-45deg, #2f58ed 0%,#2599c4 25%,#7d92e8 50%,#2399c4 75%,#2f58ed 100%); /* Chrome10+,Safari5.1+ */
+				background: -o-linear-gradient(-45deg, #2f58ed 0%,#2599c4 25%,#7d92e8 50%,#2399c4 75%,#2f58ed 100%); /* Opera 11.10+ */
+				background: -ms-linear-gradient(-45deg, #2f58ed 0%,#2599c4 25%,#7d92e8 50%,#2399c4 75%,#2f58ed 100%); /* IE10+ */
+				background: linear-gradient(135deg, #2f58ed 0%,#2599c4 25%,#7d92e8 50%,#2399c4 75%,#2f58ed 100%); /* W3C */
+				filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#2f58ed', endColorstr='#2f58ed',GradientType=1 ); /* IE6-8 fallback on horizontal gradient */
+			}
+			a {
+				color: white;
+			}
+			.dlprovider {
+				text-decoration: none;
+			}
+			.button {
+				border-radius: 10px;
+				width: 100px;
+				height: 30px;
+				display:inline-block;
+			}
+			.button-backbg {
+				display: block;
+				position: absolute;
+				height: 30px;
+				border-top-left-radius: 10px;
+				border-bottom-left-radius: 10px;
+			}
+			.button-text {
+				display: block;
+				position: absolute;
+				height: 30px;
+				width: 100px;
+				z-index: 5;
+				line-height: 30px;
+			}
+			.button-bg {
+				background: #999999;
+			}
+			.button-bgactive {
+				background: #7db9e8;
+			}
+			.button-bgios6 {
+				background: #7db9e8; /* Old browsers */
+				background: -moz-linear-gradient(top, #7db9e8 0%, #1e5799 100%); /* FF3.6+ */
+				background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#7db9e8), color-stop(100%,#1e5799)); /* Chrome,Safari4+ */
+				background: -webkit-linear-gradient(top, #7db9e8 0%,#1e5799 100%); /* Chrome10+,Safari5.1+ */
+				background: -o-linear-gradient(top, #7db9e8 0%,#1e5799 100%); /* Opera 11.10+ */
+				background: -ms-linear-gradient(top, #7db9e8 0%,#1e5799 100%); /* IE10+ */
+				background: linear-gradient(to bottom, #7db9e8 0%,#1e5799 100%); /* W3C */
+				filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#7db9e8', endColorstr='#1e5799',GradientType=0 ); /* IE6-9 */
+			}
+			.button-bgstale {
+				background: #d1d1d1; /* Old browsers */
+background: -moz-linear-gradient(top, #d1d1d1 0%, #a8a8a8 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#d1d1d1), color-stop(100%,#a8a8a8)); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(top, #d1d1d1 0%,#a8a8a8 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(top, #d1d1d1 0%,#a8a8a8 100%); /* Opera 11.10+ */
+background: -ms-linear-gradient(top, #d1d1d1 0%,#a8a8a8 100%); /* IE10+ */
+background: linear-gradient(to bottom, #d1d1d1 0%,#a8a8a8 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d1d1d1', endColorstr='#a8a8a8',GradientType=0 ); /* IE6-9 */
+			}
+		</style>
+		<script>
+  			(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+			(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+			m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+			})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+			ga('create', 'UA-40618984-1', 'semirestore.tk');
+			ga('send', 'pageview');
+		</script>
+	</head>
+	<body>
+		<div align="center" style="width: 720px;margin: 0 auto;">
+			<img src="logo-flat.png" style="float: left;height: 150px;" />
+			<div><h1>Semi-Restore</h1>
+			<h2 style="float:right;">For iOS 5.0-7.1.2</h2></div>
+			<img src="http://i.imgur.com/utAa628.png" style="margin: 0 auto;width: 740px;" />
+			<br /><br />
+		</div>
+		<div align="center">
+			<script type="text/javascript"><!--
+			google_ad_client = "ca-pub-5893310803057886";
+			/* SemiRestore-topbanner */
+			google_ad_slot = "8011797658";
+			google_ad_width = 728;
+			google_ad_height = 90;
+			//-->
+			</script>
+			<script type="text/javascript" src="http://pagead2.googlesyndication.com/pagead/show_ads.js"></script>
+		</div>
+		<br />
+		<div align="center">
+			<div style="width: 600px;height:15px;background-color: #999999;text-align: left;"><div style="width: 588px;height: 15px;background: #7db9e8;"></div></div><br />
+			98%: Windows &amp; Linux versions released.<br />Work on OS X complete, waiting for an OS X system to build it on.<br /><br />
+		</div>
+		<div align="center">
+			<a href="https://mega.co.nz/#!eEQ3VJCI!R_CQ8Tmmhfbr-mVZqbmhzCRPgr7x4M9F9hrCsCJPSeE"><div class="button button-bgactive">
+				<div class="button-text">Windows</div>
+			</div></a>
+			<div class="button button-bg">
+				<div class="button-backbg button-bgactive" style="width: 80px;"></div>
+				<div class="button-text">OS X</div>
+			</div>
+			<a href="https://mega.co.nz/#!aQghTTaa!LQsriMfTV21OcavnqNkrjVd86Fvmcv9A_UYEHiz25fw"><div class="button button-bgactive">
+				<div class="button-text">Linux</div>
+			</div></a>
+			<br /><br />
+			<form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+				<input type="hidden" name="cmd" value="_s-xclick">
+				<input type="hidden" name="encrypted" value="-----BEGIN PKCS7-----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-----END PKCS7-----
+">
+				<input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donate_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+				<img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+			</form>
+			<span style="font-size: 14px;">Compatible with all jailbroken iPhone, iPod touch, iPad and iPad mini models running iOS 5.0 through 7.1.2.</span><br />
+			<a href="https://twitter.com/coolstarorg"><img src="twitter_icon-flat.png" /></a>
+			<br />
+			<hr>
+		</div>
+		<div align="center">
+			<h3>Requirements</h3>
+			<ul style="margin: 0 auto;text-align: left;width:512px;">
+				<li>5-10 minutes of your time!</li>
+				<li>OpenSSH installed on your device</li>
+				<li>A computer running Windows or Linux</li>
+			</ul>
+			<br />
+			<hr>
+		</div>
+		<div align="center">
+			<h3>Important! Read this or you may regret it!</h3>
+			<ul style="margin: 0 auto;text-align: left;width:512px;">
+				<li>SemiRestore supports Windows XP SP3 or higher.</li>
+				<li>SemiRestore supports 32 &amp; 64 Bit Linux (Ubuntu 14.04 or a higher equivilent distro).</li>
+				<li>Windows users must have iTunes, and .NET 3.5 or higher installed.</li>
+				<li>Linux users must have libimobiledevice, GTK 3, and libssh2 installed (which should be by default).</li>
+				<li>Linux users must read the README file</li>
+				<li>There may be a better way to fix your current problem. For example, to fix "Safe Mode" issues, you can just uninstall Mobile Substrate from Cydia.</li>
+				<li>Like any other restore, make sure you backup your data if you want it later.</li>
+				<li>Avoid using your iOS device or anything related to iTunes or XCode during the Semi-Restore. Why not actually go outside?</li>
+				<li>This process can not and does not repair broken system files! Avoid all Siri Ports, as they are not only illegal (except for Spire on 5.0.1) but they also create problems and may potentially break system files (even Spire can cause this).</li>
+				<li>Your device will respring or reboot several times during the Semi-Restore. This is perfectly normal, so don't panic.</li>
+			</ul>
+			<br />
+			<hr>
+		</div>
+		<div align="center">
+			<h3>FAQ</h3>
+			<ul style="margin: 0 auto;text-align: left;width:512px;">
+				<li><i>Can I use this to go from firmware x to firmware y?</i><br /><br />
+					No, this only allows you to go to a fresh version of your <b>current</b> firmware.</li><br /><br />
+				<li><i>Do I need SHSH blobs or APTickets for this semi-restore?</i><br /><br />
+					No, since this is not a full restore and is at the userland level, this doesn't require blobs.</li><br /><br />
+				<li><i>I have a question regarding the jailbreak process or jailbreaking in general.</i><br /><br />
+					Please go to the <a href="http://jailbreakqa.com/">Jailbreak QA</a> dedicated website or try <a href="http://reddit.com/r/jailbreak">/r/jailbreak on Reddit.</a></li><br /><br />
+			</ul>
+			<br />
+			<hr>
+		</div>
+		<div align="center">
+			<h3>Credits</h3>
+			<ul style="margin: 0 auto;text-align: left;width:512px;">
+				<li>Semi-Restore is a production of <a href="https://twitter.com/coolstarorg">CoolStar</a>.</li>
+			</ul>
+			<br />
+			<hr>
+		</div>
+		<div align="center">
+			<h3>Thanks to</h3>
+			<ul style="margin: 0 auto;text-align: left;width:512px;">
+				<li><a href="https://twitter.com/coolstarorg">@coolstarorg</a> for his research and development.</li>
+				<li><a href="https://twitter.com/pod2g">@pod2g</a> for the iOS 5.x jailbreaks.</li>
+				<li><a href="https://twitter.com/evad3rs">@evad3rs</a> for the iOS 6.0-6.1.2, and 7.x jailbreak.</li>
+				<li><a href="https://twitter.com/winocm">@winocm</a>,<a href="https://twitter.com/iH8Sn0w">@iH8Sn0w</a>, and <a href="https://twitter.com/SquiffyPwn">@SquiffyPwn</a> for the iOS 6.1.3-6.1.5 jailbreak.</li>
+				<li><a href="https://raw.githubusercontent.com/libimobiledevice/libimobiledevice/master/AUTHORS">All these nice people</a> for making the Linux version possible.</li>
+				<li><a href="https://webchat.freenode.net/?channels=jailbreakqa">#jailbreakqa on freenode</a> for the inspiration to create the semi-restore.</li>
+			</ul>
+			<br />
+			<hr>
+		</div>
+		<div align="center">
+			<h3>Disclaimer</h3>
+			<ul style="margin: 0 auto;text-align: left;width:512px;">
+				<li>CoolStar is in no way responsible for damages for the semi-restore. Although it has been tested thoroughly, some configurations which may contain damaged system files or illegal Siri Ports may cause the semi-restore to fail. If semi-restore doesn't work, your best bet would be to just do a regular ol' restore.</li>
+			</ul>
+			<br />
+			<hr>
+		</div>
+		<!-- Start of SimpleHitCounter Code -->
+		<div align="center"><img src="http://simplehitcounter.com/hit.php?uid=1556057&f=16777215&b=0" border="0" height="18" width="83" alt="web counter"></div>
+		<!-- End of SimpleHitCounter Code -->
+	</body>
+</html>
