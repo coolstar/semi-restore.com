@@ -1,6 +1,6 @@
 <html>
 	<head>
-		<title>Semi-Restore for iOS 5.0-8.1</title>
+		<title>Semi-Restore for iOS 5.0-8.1.2</title>
 		<style type="text/css">
 			h1{
 				text-align:center;
@@ -79,6 +79,9 @@
 			.button-bgactive {
 				background: #7db9e8;
 			}
+			.button-bgworkaround {
+				opacity: 0.8;
+			}
 			.button-bgios6 {
 				background: #7db9e8; /* Old browsers */
 				background: -moz-linear-gradient(top, #7db9e8 0%, #1e5799 100%); /* FF3.6+ */
@@ -99,6 +102,20 @@ background: -ms-linear-gradient(top, #d1d1d1 0%,#a8a8a8 100%); /* IE10+ */
 background: linear-gradient(to bottom, #d1d1d1 0%,#a8a8a8 100%); /* W3C */
 filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d1d1d1', endColorstr='#a8a8a8',GradientType=0 ); /* IE6-9 */
 			}
+			.macworkaround {
+				position: fixed;
+				top: 30%;
+				left: 30%;
+				width: 40%;
+				height: 40%;
+				background: white;
+				z-index: 99;
+				border-radius: 10px;
+				color: black;
+			}
+			.macworkaround a {
+				color: blue;
+			}
 		</style>
 		<script>
   			(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
@@ -111,10 +128,20 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d1d1d1', end
 		</script>
 	</head>
 	<body>
+		<div id="macworkaround" class="macworkaround" style="display: none;">
+			<br>
+			<h2>Instructions for Mac users</h1>
+			<br>
+			<div style="width: 500px; margin: 0 auto;">
+				<img src="https://design.ubuntu.com/wp-content/uploads/ubuntu-logo32.png" style="vertical-align: middle;width: 100px;" /><span style="margin-left: 25px;">Download Ubuntu</span><span style="margin-left: 20%; margin-right: 20px;"><a href="http://ubuntu.com/">Download</a></span><br /><br />
+				<img src="https://upload.wikimedia.org/wikipedia/commons/8/86/SanDisk_Cruzer_Micro.png" style="vertical-align: middle;width: 100px;" /><span style="margin-left: 25px;">Create a live USB</span><span style="margin-left: 20%; margin-right: 20px;"><a href="http://www.ubuntu.com/download/desktop/create-a-usb-stick-on-mac-osx">Go</a></span><br /><br />
+				<img src="SemiRestore.png" style="vertical-align: middle;width: 100px;" /><span style="margin-left: 25px;">Download and run the Linux version</span><br /><br />
+			</div>
+		</div>
 		<div align="center" style="width: 720px;margin: 0 auto;">
 			<img src="logo-flat.png" style="float: left;height: 150px;" />
 			<div><h1>Semi-Restore</h1>
-			<h2 style="float:right;">For iOS 5.0-8.1</h2></div>
+			<h2 style="float:right;">For iOS 5.0-8.1.2</h2></div>
 			<img src="https://i.imgur.com/utAa628.png" style="margin: 0 auto;width: 740px;" />
 			<br /><br />
 		</div>
@@ -130,19 +157,19 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d1d1d1', end
 			<script type="text/javascript" src="https://pagead2.googlesyndication.com/pagead/show_ads.js"></script>
 		</div>
 		<br />
-		<div align="center">
+		<!--<div align="center">
 			<div style="width: 600px;height:15px;background-color: #999999;text-align: left;"><div style="width: 588px;height: 15px;background: #7db9e8;"></div></div><br />
-			80%: Windows &amp; Linux versions released.<br />Work on OS X complete for iOS 7, need to update for iOS 8.1 and then need an OS X system to build it on.<br /><br />
-		</div>
+			Windows and Linux versions released!<br /><br />
+		</div>-->
 		<div align="center">
-			<a href="https://mega.co.nz/#!PQY2nTaJ!LxAulVEj3tlPSZn3NTnJ7RXdqnvkdDwVSWPDHyYPuXU"><div class="button button-bgactive">
+			<a href="https://mega.co.nz/#!KQpwhaDR!eQT-gYh3L_tCd7IJ7B5IrujFdEyAB_2V4jz7PzvlPS0"><div class="button button-bgactive">
 				<div class="button-text">Windows</div>
 			</div></a>
-			<div class="button button-bg">
-				<div class="button-backbg button-bgactive" style="width: 80px;"></div>
+			<a href="#" onclick="document.getElementById('macworkaround').style.display='';"><div class="button button-bg">
+				<div class="button button-bgactive button-bgworkaround" style="width: 100px;display: block;position: absolute;"></div>
 				<div class="button-text">OS X</div>
-			</div>
-			<a href="https://mega.co.nz/#!Tc4ixJjC!HWUEB2Y3yKRpNs5XwduISpCDU_X0hHjGSz2VVSF_aN8"><div class="button button-bgactive">
+			</div></a>
+			<a href="https://mega.co.nz/#!3VQ0yCoD!wkuI2VYUZ5BgMpyMPi3Aw-DJA4hvrn7V3QD7RACzyDg"><div class="button button-bgactive">
 				<div class="button-text">Linux</div>
 			</div></a>
 			<br /><br />
@@ -153,7 +180,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d1d1d1', end
 				<input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donate_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
 				<img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
 			</form>
-			<span style="font-size: 14px;">Compatible with all jailbroken iPhone, iPod touch, iPad and iPad mini models running iOS 5.0 through 8.1.</span><br />
+			<span style="font-size: 14px;">Compatible with all jailbroken iPhone, iPod touch, iPad and iPad mini models running iOS 5.0 through 8.1.2.</span><br />
 			<a href="https://twitter.com/coolstarorg"><img src="twitter_icon-flat.png" /></a>
 			<br />
 			<hr>
